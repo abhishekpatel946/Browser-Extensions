@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "name": "TEST",
+    "version": "1.0",
+    "description": "just for the testing the first chrome extenstion",
+    "icons": {
+        "128": "icons128.png",
+        "48": "icons48.png",
+        "16": "icons16.png"
+    }
+
+}
