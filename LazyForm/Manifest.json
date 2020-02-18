@@ -4,9 +4,9 @@
     "version": "1.0",
     "description": "just for the testing the first chrome extenstion",
     "icons": {
-        "128": "icons128.png",
-        "48": "icons48.png",
-        "16": "icons16.png"
+        "128": "img/icons128.jpg",
+        "48": "img/icons48.jpg",
+        "16": "img/icons16.jpg"
     }
 
 }
