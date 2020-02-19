@@ -8,12 +8,90 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>LazyForm</title>
   </head>
   <body>
+
+
     <h1>Hello, world!</h1>
 
+
+
+
+     <!-- The text field -->
+    <input class="form-control" id="fname" type="text" value="Abhishek" readonly>
+    <!-- The button used to copy the text -->
+    <script>
+      function myFunction1() {
+          /* Get the text field */
+          var copyText = document.getElementById("fname");
+        
+          /* Select the text field */
+          copyText.select();
+          copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+        
+          /* Copy the text inside the text field */
+          document.execCommand("copy");
+        
+          /* Alert the copied text */
+          alert("Copied the text: " + copyText.value);
+        } 
+    </script>
+    <button onclick="myFunction1()">Copy text</button> 
+
+
+
+
+
+     <!-- The text field -->
+     <input class="form-control" id="lname" type="text" value="Patel" readonly>
+    <!-- The button used to copy the text -->
+    <script>
+      function myFunction2() {
+          /* Get the text field */
+          var copyText = document.getElementById("lname");
+        
+          /* Select the text field */
+          copyText.select();
+          copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+        
+          /* Copy the text inside the text field */
+          document.execCommand("copy");
+        
+          /* Alert the copied text */
+          alert("Copied the text: " + copyText.value);
+        } 
+    </script>
+    <button onclick="myFunction2()">Copy text</button> 
+
+
+    <form>
+      <input name="email" type="email" id="email" required="" placeholder="Email" />
+    </form>
+
+    <script>
+      var storedValue = localStorage.getItem("email");
+    </script>
+
+    <button onclick="store()" type="button">StoreEmail</button>
+    <script  type="text/javascript">
+      function store(){
+        console.log('email stored')
+         var inputEmail = document.getElementById("email");
+         localStorage.setItem("email", inputEmail.value);
+        }
+        document.write(inputEmail)
+    </script>
+
+  
+
+     
+
+    <script src="JS/copy.js"></script>
+
+
     <!-- Optional JavaScript -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
