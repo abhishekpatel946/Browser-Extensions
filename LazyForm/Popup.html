@@ -12,163 +12,234 @@
   </head>
   <body>
 
+    <div class="d-flex justify-content-center">
+      <h2> Hello, LazyForm </h2>
+    </div>
+    
 
-    <h1>Hello, LazyForm</h1>
+    <table class="table table-hover table-dark">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Containt</th>
+          <th scope="col">Copied</th>
+        
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>
+              <!-- First Name -->
+              <input class="form-control" id="fname" type="text" value="Abhishek" readonly>
+          </td>
+          <td>
+              <!-- The button used to copy the text -->
+              <script>
+                function myFunction1() {
+                    /* Get the text field */
+                    var copyText = document.getElementById("fname");
+                  
+                    /* Select the text field */
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+                  
+                    /* Copy the text inside the text field */
+                    document.execCommand("copy");
+                  
+                    /* Alert the copied text */
+                    alert("Copied the text: " + copyText.value);
+                  } 
+              </script>
+              <button type="button" class="btn btn-outline-light" onclick="myFunction1()">Copy</button> 
+          </td> 
+        </tr>
+
+        <tr>
+          <th scope="row">2</th>
+          <td>
+               <!-- Last Name -->
+               <input class="form-control" id="lname" type="text" value="Patel" readonly>
+          </td>
+          <td>
+               <!-- The button used to copy the text -->
+              <script>
+                function myFunction2() {
+                    /* Get the text field */
+                    var copyText = document.getElementById("lname");
+                  
+                    /* Select the text field */
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+                  
+                    /* Copy the text inside the text field */
+                    document.execCommand("copy");
+                  
+                    /* Alert the copied text */
+                    alert("Copied the text: " + copyText.value);
+                  } 
+              </script>
+              <button type="button" class="btn btn-outline-light" onclick="myFunction2()">Copy</button> 
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">3</th>
+          <td>
+              <!-- Email -->
+             <input class="form-control" id="email" type="text" value="abhishekpatel946@gmail.com" readonly>
+          </td>
+          <td>
+               <!-- The button used to copy the text -->
+              <script>
+                function myFunction3() {
+                    /* Get the text field */
+                    var copyText = document.getElementById("email");
+                  
+                    /* Select the text field */
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+                  
+                    /* Copy the text inside the text field */
+                    document.execCommand("copy");
+                  
+                    /* Alert the copied text */
+                    alert("Copied the text: " + copyText.value);
+                  } 
+              </script>
+              <button type="button" class="btn btn-outline-light" onclick="myFunction3()">Copy</button> 
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">4</th>
+          <td>
+               <!-- Mobile Number -->
+               <input class="form-control" id="mno" type="text" value="6264727383" readonly>
+          </td>
+          <td>
+              <!-- The button used to copy the text -->
+              <script>
+                function myFunction4() {
+                    /* Get the text field */
+                    var copyText = document.getElementById("mno");
+                  
+                    /* Select the text field */
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+                  
+                    /* Copy the text inside the text field */
+                    document.execCommand("copy");
+                  
+                    /* Alert the copied text */
+                    alert("Copied the text: " + copyText.value);
+                  } 
+              </script>
+              <button type="button" class="btn btn-outline-light" onclick="myFunction4()">Copy</button> 
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">5</th>
+          <td>
+              <!-- Roll No -->
+              <input class="form-control" id="roll" type="text" value="0801IT183D02" readonly>
+          </td>
+          <td>
+              <!-- The button used to copy the text -->
+              <script>
+                function myFunction5() {
+                    /* Get the text field */
+                    var copyText = document.getElementById("roll");
+                  
+                    /* Select the text field */
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+                  
+                    /* Copy the text inside the text field */
+                    document.execCommand("copy");
+                  
+                    /* Alert the copied text */
+                    alert("Copied the text: " + copyText.value);
+                  } 
+              </script>
+              <button type="button" class="btn btn-outline-light" onclick="myFunction5()">Copy</button> 
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">6</th>
+          <td>
+              <!-- Permanent Adderss -->
+              <input class="form-control" id="padd" type="text" value="17, Narsingpura, Barwaha, Khagone M.P. 451115" readonly>
+          </td>
+          <td>
+              <!-- The button used to copy the text -->
+              <script>
+                function myFunction6(){
+                    /* Get the text field */
+                    var copyText = document.getElementById("padd");
+                  
+                    /* Select the text field */
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+                  
+                    /* Copy the text inside the text field */
+                    document.execCommand("copy");
+                  
+                    /* Alert the copied text */
+                    alert("Copied the text: " + copyText.value);
+                  } 
+              </script>
+              <button type="button" class="btn btn-outline-light" onclick="myFunction6()">Copy</button> 
+          </td>
+        </tr>
+        
+        <tr>
+          <th scope="row">7</th>
+          <td>
+              <!-- Current Address -->
+              <input class="form-control" id="cadd" type="text" value="JC Bose Hostel, SGSITS college, indore 452003" readonly>
+          </td>
+          <td>
+              <!-- The button used to copy the text -->
+              <script>
+                function myFunction7() {
+                    /* Get the text field */
+                    var copyText = document.getElementById("cadd");
+                  
+                    /* Select the text field */
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+                  
+                    /* Copy the text inside the text field */
+                    document.execCommand("copy");
+                  
+                    /* Alert the copied text */
+                    alert("Copied the text: " + copyText.value);
+                  } 
+              </script>
+              <button type="button" class="btn btn-outline-light" onclick="myFunction7()">Copy</button> 
+          </td>
+        </tr>
 
 
+      </tbody>
+    </table>
 
 
-     <!-- First Name -->
-    <input class="form-control" id="fname" type="text" value="Abhishek" readonly>
-    <!-- The button used to copy the text -->
-    <script>
-      function myFunction1() {
-          /* Get the text field */
-          var copyText = document.getElementById("fname");
-        
-          /* Select the text field */
-          copyText.select();
-          copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-        
-          /* Copy the text inside the text field */
-          document.execCommand("copy");
-        
-          /* Alert the copied text */
-          alert("Copied the text: " + copyText.value);
-        } 
-    </script>
-    <button onclick="myFunction1()">Copy</button> 
-
-     <!-- Last Name -->
-     <input class="form-control" id="lname" type="text" value="Patel" readonly>
-    <!-- The button used to copy the text -->
-    <script>
-      function myFunction2() {
-          /* Get the text field */
-          var copyText = document.getElementById("lname");
-        
-          /* Select the text field */
-          copyText.select();
-          copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-        
-          /* Copy the text inside the text field */
-          document.execCommand("copy");
-        
-          /* Alert the copied text */
-          alert("Copied the text: " + copyText.value);
-        } 
-    </script>
-    <button onclick="myFunction2()">Copy</button> 
-
-     <!-- Email -->
-     <input class="form-control" id="email" type="text" value="abhishekpatel946@gmail.com" readonly>
-    <!-- The button used to copy the text -->
-    <script>
-      function myFunction3() {
-          /* Get the text field */
-          var copyText = document.getElementById("email");
-        
-          /* Select the text field */
-          copyText.select();
-          copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-        
-          /* Copy the text inside the text field */
-          document.execCommand("copy");
-        
-          /* Alert the copied text */
-          alert("Copied the text: " + copyText.value);
-        } 
-    </script>
-    <button onclick="myFunction3()">Copy</button> 
-
-    <!-- Mobile Number -->
-    <input class="form-control" id="mno" type="text" value="6264727383" readonly>
-    <!-- The button used to copy the text -->
-    <script>
-      function myFunction4() {
-          /* Get the text field */
-          var copyText = document.getElementById("mno");
-        
-          /* Select the text field */
-          copyText.select();
-          copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-        
-          /* Copy the text inside the text field */
-          document.execCommand("copy");
-        
-          /* Alert the copied text */
-          alert("Copied the text: " + copyText.value);
-        } 
-    </script>
-    <button onclick="myFunction4()">Copy</button> 
-
-    <!-- Roll No -->
-    <input class="form-control" id="roll" type="text" value="0801IT183D02" readonly>
-    <!-- The button used to copy the text -->
-    <script>
-      function myFunction5() {
-          /* Get the text field */
-          var copyText = document.getElementById("roll");
-        
-          /* Select the text field */
-          copyText.select();
-          copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-        
-          /* Copy the text inside the text field */
-          document.execCommand("copy");
-        
-          /* Alert the copied text */
-          alert("Copied the text: " + copyText.value);
-        } 
-    </script>
-    <button onclick="myFunction5()">Copy</button> 
-
-    <!-- Permanent Adderss -->
-    <input class="form-control" id="padd" type="text" value="17, Narsingpura, Barwaha, Khagone M.P. 451115" readonly>
-    <!-- The button used to copy the text -->
-    <script>
-      function myFunction6(){
-          /* Get the text field */
-          var copyText = document.getElementById("padd");
-        
-          /* Select the text field */
-          copyText.select();
-          copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-        
-          /* Copy the text inside the text field */
-          document.execCommand("copy");
-        
-          /* Alert the copied text */
-          alert("Copied the text: " + copyText.value);
-        } 
-    </script>
-    <button onclick="myFunction6()">Copy</button> 
-
-    <!-- Current Address -->
-    <input class="form-control" id="cadd" type="text" value="JC Bose Hostel, SGSITS college, indore 452003" readonly>
-    <!-- The button used to copy the text -->
-    <script>
-      function myFunction7() {
-          /* Get the text field */
-          var copyText = document.getElementById("cadd");
-        
-          /* Select the text field */
-          copyText.select();
-          copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-        
-          /* Copy the text inside the text field */
-          document.execCommand("copy");
-        
-          /* Alert the copied text */
-          alert("Copied the text: " + copyText.value);
-        } 
-    </script>
-    <button onclick="myFunction7()">Copy</button> 
-
-
-
-
-
+    <!-- footer -->
+    
+        <!-- Footer -->
+	      <footer class="page-footer font-small cyan darken-3 text-white bg-dark">
+          
+          
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">
+              © 2020 Copyright: LazyForm
+            </div>
+            <!-- Copyright -->
+        </footer>
 
 
 
